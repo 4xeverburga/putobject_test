@@ -11,7 +11,7 @@ plt.title('Comparación de tiempo entre los 2 métodos')
 plt.ylabel('Tiempo (segundos)')
 plt.xlabel('Método')
 plt.grid(True)
-plt.savefig('box_plot_comparison.png')
+plt.savefig('box_plot_comparison.png', dpi=300)
 
 # Determine the range for the histograms
 min_time = min(df['put_object'].min(), df['upload_file'].min())
@@ -35,4 +35,4 @@ plt.xlabel('Tiempo (segundos)')
 plt.ylabel('Frecuencia')
 
 plt.tight_layout()
-plt.savefig('histograms_comparison.png')
+plt.savefig('histograms_comparison.png', dpi=300)
